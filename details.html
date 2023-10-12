@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Lora:ital,wght@0,600;0,700;1,600;1,700&family=Playfair+Display:wght@400;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/tailwind.css">
+    <title>Bella</title>
+    <link rel="icon" type="image/x-icon" href="./images/bella.bmp.png">
+</head>
+
+<body class="font-lato relative ">
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #submit {
+            background-image: url(./images/submit.svg);
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+
+        html,
+        body {
+            position: relative;
+            width: 100%;
+        }
+
+        .swiper {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            object-fit: cover;
+        }
+    </style>
+
+<section  class="bg-mygray/90 fixed top-0 left-0 w-full z-50">
+    <header class=" flex  justify-between py-1 px-3 md:px-6 items-center container">
+        <div class="inline-flex justify-center items-center">
+            <a href="./index.html"> <img class="inline-block md:w-[70px] w-[50px] h-[35px] md:h-[50px] mr-8 my-4" src="./images/logo.png"></a>
+
+            <ul class="lg:inline-flex hidden text-center  "> 
+                <h6><li class="px-4 hover:underline"><a href="./index.html"> Home</a></li></h6>
+                <h6><li class="px-4 hover:underline"><a href="./shop1.html">Shop</a></li></h6>
+                <h6><li class="px-4 hover:underline"><a href="./blog1.html">Blog</a></li> </h6>
+                <h6><li class="px-4 hover:underline"><a href="./aboutus.html">About</a></li></h6>
+                <h6><li class="px-4 hover:underline"><a href="./contact.html">Contact</a></li></h6>
+            </ul>
+        </div>
+        <div class="inline-flex flex-nowrap justify-center items-center mx-3">
+            <div class=" relative inline-block">
+                <img src="./images/searchblackicon.svg" class="absolute w-6 opacity-30 top-3 left-3 z-40">
+                <input type="text"  placeholder=" Search"
+                    class="inline-block w-full md:w-auto border-myboldgray outline-none focus:border-main border-[1px] rounded-3xl p-2 pl-9">
+            </div>
+            <a href="#" class="bg-main hover:bg-[#ed4d38] md:w-14 w-[46px] md:h-14 h-[44px] md:p-4 p-2 inline-block rounded-full ml-1 ">
+                <img src="./images/logoicon.svg" class="w-full h-full">
+            </a>
+            <div class="lg:hidden items-center float-right mx-1 ">
+                <button id="navIcon">
+                    <svg class=" w-7 h-7 text-black hover:text-main " x-show="!showMenu" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 28 28" stroke="currentColor">
+                        <path d="M4 12h16M4 18h16"></path>
+                        </svg>
+                </button>
+                
+            </div>
+        </div>
+    </header>
+<div id="MobileMenu" class="hidden">
+        <ul class="bg-white "> 
+            <h6><li class="p-4"><a href="./index.html"> Home</a></li></h6>
+            <h6><li class="p-4"><a href="./shop1.html">Shop</a></li></h6>
+            <h6><li class="p-4"><a href="./blog1.html">Blog</a></li> </h6>
+            <h6><li class="p-4"><a href="./aboutus.html">About</a></li></h6>
+            <h6><li class="p-4"><a href="./contact.html">Contact</a></li></h6>
+            <h6><li class="p-4"><a href="./home.html">FAQ</a></li></h6>
+        </ul>
+</div>  
+</section>
+<script>
+    const btn=document.getElementById('navIcon');
+    const menu=document.getElementById('MobileMenu');
+    btn.addEventListener('click',()=>{
+        menu.classList.toggle('hidden');
+    })
+</script>
+<!-- NAV END -->
+
+    <section id="first" class="bg-mygray mt-8">
+        <div class="container">
+            <div class="lg:p-12 w-[95%] mx-auto py-12 my-[70px] relative">
+                <h1 class="font-Great"><span class="text-main"></h1>
+                <h1 class="font-lora md:text-5xl text-3xl"> </h1>
+
+
+                <div
+                    class="bg-white p-2 font-Lato justify-center items-center flex flex-nowrap border-[1px] border-myboldgray/20 absolute lg:right-24 -right-0 left-auto top-auto -bottom-2 rounded-3xl w-[210px] h-8">
+                    <a href="#" class="text-black hover:text-main inline-block text-[10px]">HOME</a>
+                    <img src="./images/to.svg" class="opacity-30 inline-block ">
+                    <a href="#" class="text-black hover:text-main inline-block text-[10px]">SHOP</a>
+                    <img src="./images/to.svg" class="opacity-30 inline-block ">
+                    <div class="text-myboldgray text-[10px] ">PRODUCT CARD</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="container lg:w-4/5 w-[94%]">
+        <section class="mx-auto grid grid-cols-1 lg:grid-cols-2 my-[8%]">
+            <div class="w-full flex flex-col-reverse md:flex-row">
+                <div class="md:w-[20%] w-full flex flex-nowrap md:flex-wrap items-start md:h-[250px] my-3 md:my-0">
+                    <div class="bg-cover bg-center bg-no-repeat w-[80px] h-[80px] inline-block m-2 ml-0 md:ml-2 md:mt-0 border-2 border-white outline outline-[1px] outline-main"
+                        style="background-image: url(./images2/1.jpg);"></div>
+                    <div class="bg-cover bg-center bg-no-repeat w-[80px] h-[80px] inline-block m-2 opacity-50 hover:opacity-100 duration-300"
+                        style="background-image: url(./images2/1hover.jpg);"></div>
+                    <div class="bg-cover bg-center bg-no-repeat w-[80px] h-[80px] inline-block m-2 opacity-50 hover:opacity-100 duration-300"
+                        style="background-image: url(./images2/1details.jpg);"></div>
+                </div>
+                <div class="md:w-[90%] w-[98%] h-[400px] md:h-[700px] lg:h-[600px] bg-no-repeat bg-cover bg-center "
+                    style="background-image: url(./images2/1.jpg);"></div>
+            </div>
+            <div class="lg:pl-[15%] pt-[15%] pr-[5%] ">
+                <h1 class="font-lora font-bold md:text-[40px] text-[28px] ">Knit Turtleneck Sweater</h1>
+                <p class="font-Lato text-myboldgray text-sm leading-6 my-[4%] ">You can buy amazing products like this
+                    on
+                    Hollister's website. Link on the licensing page. Writing result-oriented ad copy is difficult, as it
+                    must appeal to, entice, and convince consumers to take action.</p>
+                <p class="text-2xl font-Lato mb-[6%] ">$ 54.95 USD <span
+                        class="text-base font-medium  text-main ml-2"><s> $
+                            54.95 USD</s></span> </p>
+                <div class="py-[10px] px-3 rounded-xl border-[1px] border-[#eae8e8] inline-block">
+                    <input type="number" value="1" min="1" max="20"
+                        class="my-4 mx-6 focus:border-main border-[1px] border-[#eae8e8] rounded-3xl px-4 py-2">
+                </div>
+                <button
+                    class="block font-Lato text-center text-xs font-bold tracking-[3px] bg-[#ff6852] hover:bg-main duration-500 text-white rounded-3xl w-[190px] my-7 p-3"
+                    type="submit"> <img src="./images/shopnow.svg" class="inline-block mr-1"> ADD TO CART</button>
+            </div>
+        </section>
+    </div>
+
+
+    <section id="Desc" class="container">
+        <div
+            class=" w-full mx-auto pt-3 flex justify-between border-2 bg-white border-white border-b-[#eae8e8] border-t-[#eae8e8] sticky top-[70px] md:top-[90px] z-[100] ">
+            <ul class="flex flex-nowrap">
+                <li><a href="#"
+                        class="border-2 border-b-black border-white p-5 mr-3 inline-block font-Lato text-sm font-semibold">Description</a>
+                </li>
+                <li><a href="#"
+                        class="border-2 focus:border-b-black border-white p-5 mr-3 inline-block font-Lato text-sm font-semibold ">Details</a>
+                </li>
+                <li><a href="#"
+                        class="border-2 focus:border-b-black border-white p-5 mr-3 inline-block font-Lato text-sm font-semibold ">Shipping</a>
+                </li>
+            </ul>
+            <div class=" flex-warp hidden lg:inline-flex self-center">
+                <p class="font-Lato text-sm my-[3%] text-myboldgray">Share it:</p>
+                <a href=""><img src="./images/twitterb.svg" class="mx-2 my-1 opacity-50 hover:opacity-100 w-5 h-5"></a>
+                <a href=""><img src="./images/facebookb.svg" class="mx-2 my-1 opacity-50 hover:opacity-100 w-4 h-4"></a>
+                <a href=""><img src="./images/pentrestb.svg" class="mx-2 my-1 opacity-50 hover:opacity-100 w-4 h-4"></a>
+                <a href=""><img src="./images/telgramb.svg" class="mx-2 my-1 opacity-50 hover:opacity-100 w-4 h-4"></a>
+            </div>
+        </div>
+        <div class="lg:w-4/5 w-[94%] mx-auto flex flex-wrap lg:flex-nowrap my-[6%] justify-between">
+            <div class="lg:w-[65%] my-8 lg:my-0">
+                <h1 class="font-bold text-2xl font-lora">Full Description</h1>
+                <p class="font-Lato text-sm leading-6 my-[3%] mb-10">Remember, you must be able to make good on that
+                    promise, so don’t offer anything unreasonable. Writing result-oriented ad copy is difficult, as
+                    it
+                    must appeal to, entice, and convince consumers to take action. There is no <span
+                        class="text-main hover:underline">magic formula</span> to write perfect ad copy; it is based
+                    on
+                    a number of factors, including ad placement, demographic, even the consumer’s mood when they see
+                    your ad. </p>
+                <h1 class="font-bold text-2xl font-lora">Stylish Ecommerce Template </h1>
+                <p class="font-Lato text-sm leading-6 my-[3%] mb-10 ">So how is any writer supposed to pen a
+                    stunning
+                    piece of advertising copy — copy that sizzles and sells? The following tips will jumpstart your
+                    creative thinking and help you write a better ad. Consumers are inundated with ads, so it’s
+                    vital
+                    that your ad catches the eye and immediately grabs interest.</p>
+                <img src="./images2/1hover.jpg" class="w-full h-[450px] md:h-[800px] lg:h-[950px]">
+                <p class="font-Lato text-sm leading-6 my-[3%] mb-10">You could do this with a headline or slogan
+                    (such
+                    as VW’s “Drivers Wanted” campaign), color or layout (Target’s new colorful, simple ads are a
+                    testimony to this) or illustration (such as the Red Bull characters or Zoloft’s depressed ball
+                    and
+                    his ladybug friend). All good advertising copy is comprised of the same basic elements. </p>
+                <h1 class="font-bold text-2xl font-lora">Simple & Beautiful</h1>
+                <ul class="font-lora  my-[3%] list-decimal list-inside">TEMPLATE FEATURES:
+                    <li class="font-Lato text-sm leading-6 ml-9 mt-3">Beautifully Designed</li>
+                    <li class="font-Lato text-sm leading-6 ml-9">Fully Responsive</li>
+                    <li class="font-Lato text-sm leading-6 ml-9">CMS Content</li>
+                    <li class="font-Lato text-sm leading-6 ml-9">Smooth Interactions</li>
+                </ul>
+                <p class="font-Lato text-sm leading-6 my-[3%] ">If you have a full page ad, feel free to experiment;
+                    more page space gives you more creative space. If the ad is tiny, you’ll need to keep things as
+                    simple as possible. What would the consumer gain by using your product or service? This could be
+                    tangible, like a free gift; prestige, power or fame. But remember: you must be able to make good
+                    on
+                    that promise, so don’t offer anything unreasonable.</p>
+            </div>
+            <div
+                class="lg:hidden inline-flex w-full py-4 px-2 border-2 bg-white border-white border-b-[#eae8e8] border-t-[#eae8e8] my-16">
+                <div class=" flex-warp flex self-center">
+                    <p class="font-Lato text-sm my-[3%] text-myboldgray">Share it:</p>
+                    <a href=""><img src="./images/twitterb.svg"
+                            class="mx-2 my-1 opacity-60 hover:opacity-100 w-5 h-5"></a>
+                    <a href=""><img src="./images/facebookb.svg"
+                            class="mx-2 my-1 opacity-60 hover:opacity-100 w-4 h-4"></a>
+                    <a href=""><img src="./images/pentrestb.svg"
+                            class="mx-2 my-1 opacity-60 hover:opacity-100 w-4 h-4"></a>
+                    <a href=""><img src="./images/telgramb.svg"
+                            class="mx-2 my-1 opacity-60 hover:opacity-100 w-4 h-4"></a>
+                </div>
+            </div>
+            <div class="lg:w-1/4 border-main border-2 block h-[460px] md:h-[500px]">
+                <div class="h-1/5 text-center p-4">
+                    <h2 class="font-Great text-lg"><span class="text-main">New</span> Arrivals</h2>
+                    <h6 class="font-lora font-bold">Explore Our Shop</h6>
+                </div>
+                <a href="shop1.html" class="inline-block relative h-4/5">
+                    <img src="./images/bages.jpeg" class="w-full h-full ">
+                    <div
+                        class="absolute left-0 right-0 top-0 bottom-0 inline-flex items-center justify-center text-center icon hovericon">
+                        <p class="inline-block absolute py-[6%] px-6 border-2 bg-white rounded-full tracking-[3px] font-Lato text-xs font-bold
+                        duration-700 hoverpadding-l hovericon">
+                            <img src="./images/shopblack.svg"
+                                class="absolute lg:bottom-4 md:bottom-5  left-3  w-5  icon hovericon">
+                            SHOP NOW
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="lg:w-2/5 w-full mx-auto my-10 text-center py-[3%]">
+            <h1 class="font-Great text-2xl"><span class="text-main">Explore</span> Other Items</h1>
+            <h1 class="font-lora lg:text-4xl text-3xl mt-[2%]">There's More To See</h1>
+            <div class="bg-black w-28 mx-auto h-[3px] mt-[5%] "></div>
+        </div>
+    </section>
+    <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 lg:w-4/5 md:w-[95%] w-full mx-auto container">
+        <div class="text-center lg:m-3 my-10 ">
+            <a href="#" class="inline-block relative  md:h-[350px] w-11/12">
+                <img src="./images2/2.jpg" class="w-full h-full hover:hidden">
+                <div
+                    class="flex absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-[1] duration-300 items-center justify-center">
+                    <img src="./images2/2hover.jpg" class="w-full h-full">
+                </div>
+                <div
+                    class=" absolute left-auto w-[40px] h-[40px] right-2 bottom-2 top-auto inline-block p-2 border-2 bg-white rounded-full hover:scale-110">
+                    <img src="./images/imgp.svg" class="w-full h-full">
+                </div>
+            </a>
+            <h1 class="md:text-sm text-xs font-bold my-4 px-2">Flaux Leather Flip Flop</h1>
+            <p class="font-thin text-sm text-stone-600">$ 19.95 USD</p>
+        </div>
+        <div class="text-center lg:m-3 my-10 ">
+            <a href="#" class="inline-block relative md:h-[350px] w-11/12">
+                <img src="./images2/3.jpg" class="w-full h-full hover:hidden">
+                <div
+                    class="flex absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-[1] duration-300 items-center justify-center">
+                    <img src="./images2/3hover.jpg" class="w-full h-full">
+                </div>
+                <div
+                    class=" absolute left-auto w-[40px] h-[40px] right-2 bottom-2 top-auto inline-block p-2 border-2 bg-white rounded-full hover:scale-110">
+                    <img src="./images/imgp.svg" class="w-full h-full">
+                </div>
+            </a>
+            <h1 class="md:text-sm text-xs font-bold my-4 px-2">Relaxed Logo Hoodie</h1>
+            <p class="font-thin text-sm text-stone-600"> $ 44.95 USD</p>
+        </div>
+        <div class="text-center lg:m-3 my-10 ">
+            <a href="#" class="inline-block relative md:h-[350px] w-11/12">
+                <img src="./images2/4.jpg" class="w-full h-full hover:hidden">
+                <div
+                    class="flex absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-[1] duration-300 items-center justify-center">
+                    <img src="./images2/4hover.jpg" class="w-full h-full">
+                </div>
+                <div
+                    class=" absolute left-auto w-[40px] h-[40px] right-2 bottom-2 top-auto inline-block p-2 border-2 bg-white rounded-full hover:scale-110">
+                    <img src="./images/imgp.svg" class="w-full h-full">
+                </div>
+            </a>
+            <h1 class="md:text-sm text-xs font-bold my-4 px-2">Classic Stretch Mid-Rise Super Skinny Jeans</h1>
+            <p class="font-thin text-sm text-stone-600">$ 59.95 USD</p>
+        </div>
+        <div class="text-center lg:m-3 my-10 ">
+            <a href="#" class="inline-block relative md:h-[350px] w-11/12">
+                <img src="./images2/5.jpg" class="w-full h-full hover:hidden">
+                <div
+                    class="flex absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-[1] duration-300 items-center justify-center">
+                    <img src="./images2/5hover.jpg" class="w-full h-full">
+                </div>
+                <div
+                    class=" absolute left-auto w-[40px] h-[40px] right-2 bottom-2 top-auto inline-block p-2 border-2 bg-white rounded-full hover:scale-110">
+                    <img src="./images/imgp.svg" class="w-full h-full">
+                </div>
+            </a>
+            <h1 class="md:text-sm text-xs font-bold my-4 px-2">Hollister Lo Sneaker</h1>
+            <p class="font-thin text-sm text-stone-600">$ 29.95 USD</p>
+        </div>
+        <div class="text-center lg:m-3 my-10 ">
+            <a href="#" class="inline-block relative md:h-[350px] w-11/12">
+                <img src="./images2/6.jpg" class="w-full h-full hover:hidden">
+                <div
+                    class="flex absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-[1] duration-300 items-center justify-center">
+                    <img src="./images2/6hover.jpg" class="w-full h-full">
+                </div>
+                <div
+                    class=" absolute left-auto w-[40px] h-[40px] right-2 bottom-2 top-auto inline-block p-2 border-2 bg-white rounded-full hover:scale-110">
+                    <img src="./images/imgp.svg" class="w-full h-full">
+                </div>
+            </a>
+            <h1 class="md:text-sm text-xs font-bold my-4 px-2">Festival Vibes Perfume</h1>
+            <p class="font-thin text-sm text-stone-600">$ 38.00 USD</p>
+        </div>
+        <div class="text-center lg:m-3 my-9 ">
+            <a href="#" class="inline-block relative md:h-[350px] w-11/12">
+                <img src="./images2/7.jpg" class="w-full h-full hover:hidden">
+                <div
+                    class="flex absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-[1] duration-300 items-center justify-center">
+                    <img src="./images2/7hover.jpg" class="w-full h-full">
+                </div>
+                <div
+                    class=" absolute left-auto w-[40px] h-[40px] right-2 bottom-2 top-auto inline-block p-2 border-2 bg-white rounded-full hover:scale-110">
+                    <img src="./images/imgp.svg" class="w-full h-full">
+                </div>
+            </a>
+            <h1 class="md:text-sm text-xs font-bold my-4 px-2">Banana Body Cream</h1>
+            <p class="font-thin text-sm text-stone-600">$ 30.00 USD</p>
+        </div>
+        <div class="text-center lg:m-3 my-9 ">
+            <a href="#" class="inline-block relative md:h-[350px] w-11/12">
+                <img src="./images2/8.jpg" class="w-full h-full hover:hidden">
+                <div
+                    class="flex absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-[1] duration-300 items-center justify-center">
+                    <img src="./images2/8hover.jpg" class="w-full h-full">
+                </div>
+                <div
+                    class=" absolute left-auto w-[40px] h-[40px] right-2 bottom-2 top-auto inline-block p-2 border-2 bg-white rounded-full hover:scale-110">
+                    <img src="./images/imgp.svg" class="w-full h-full">
+                </div>
+            </a>
+            <h1 class="md:text-sm text-xs font-bold my-4 px-2">Sunski Dipsea Sunglasses</h1>
+            <p class="font-thin text-sm text-stone-600">$ 29.99 USD</p>
+        </div>
+        <div class="text-center lg:m-3 my-10 ">
+            <a href="#" class="inline-block relative md:h-[350px] w-11/12">
+                <img src="./images2/9.jpg" class="w-full h-full hover:hidden">
+                <div
+                    class="flex absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-[1] duration-300 items-center justify-center">
+                    <img src="./images2/9hover.jpg" class="w-full h-full">
+                </div>
+                <div
+                    class=" absolute left-auto w-[40px] h-[40px] right-2 bottom-2 top-auto inline-block p-2 border-2 bg-white rounded-full hover:scale-110">
+                    <img src="./images/imgp.svg" class="w-full h-full">
+                </div>
+                <div
+                    class=" absolute left-auto right-2 bottom-auto top-2 inline-block p-2 px-3 border-2 bg-main rounded-2xl ">
+                    <p class="text-white text-[9px] tracking-widest font-bold">SALE</p>
+                </div>
+            </a>
+            <h1 class="md:text-sm text-xs font-bold my-4 px-2">Reversible Sherpa Windbreaker</h1>
+            <p class="font-thin text-sm text-stone-600 ">$ 69.95 USD <span class="text-xs text-main ml-2"><s> $ 88.95
+                        USD</s></span> </p>
+        </div>
+    </section>
+    <div class=" w-[300px] h-[150px] mx-auto pl-16">
+        <a href="shop1.html" class="inline-block my-14 py-[4%] px-4 border-2 border-black rounded-3xl tracking-[3px] font-Lato text-xs font-bold
+           hover:border-main hover:bg-main hover:text-white duration-500 ">
+            ALL PRODUCTS</a>
+    </div>
+
+
+    <a href="#first" id="ArrowUp"
+        class="fixed top-auto left-auto right-3 bottom-3 bg-black/50 hover:bg-main duration-700 rounded-full "><img
+            src="./images/warrow.png" class=" w-[40px] h-[40px] p-[20%] inline-block text-center self-center"></a>
+    <script>
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 100) {
+                document.getElementById('ArrowUp').style.display = 'block';
+            } else {
+                document.getElementById('ArrowUp').style.display = 'none';
+            }
+        });
+    </script>
+    <footer class="bg-mygray py-7 w-full">
+        <section class=" lg:w-4/5 w-11/12 m-auto flex flex-wrap lg:flex-nowrap justify-between item-start my-[4%] md:px-6 lg:p-0">
+            <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+                <h6 class="mb-6 text-sm md:text-base">SHOP </h6>
+                <ul class="font-Lato">
+                    <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>All Products</li></a>
+                    <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Accessories</li></a>
+                    <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Apparel</li></a>
+                    <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Perfume</li></a>
+                    <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10"><li>Shoes</li></a>
+                </ul>
+            </div>
+            <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+                <h6 class="mb-6 text-sm md:text-base">PAGES </h6>
+                <ul class="font-Lato">
+                    <a href="./index.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Home </li></a>
+                    <a href="./blog1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Blog</li></a>
+                    <a href="./aboutus.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>About</li></a>
+                    <a href="./index.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>FAQ</li></a>
+                    <a href="./contact.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10"><li>Contact</li></a>
+                </ul>
+            </div>
+            <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+                <h6 class="mb-6 text-sm md:text-base">SERVICE </h6>
+                <ul class="font-Lato">
+                    <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Search Results </li></a>
+                    <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>404 Page</li></a>
+                    <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10"><li>Protected Page</li></a>
+    
+                </ul>
+            </div>
+            <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+                <h6 class="mb-6 text-sm md:text-base">TEMPLATE  </h6>
+                <ul class="font-Lato">
+                    <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Style Guide</li></a>
+                    <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Changelog</li></a>
+                    <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10"><li>Licenses</li></a>
+                </ul>
+            </div>
+            <div class="inline-block w-full lg:w-auto relative">
+                <h6 class="mb-6 text-sm md:text-base">NEWSLETTER  </h6>
+                <div >
+                    <div class=" relative inline-block">
+                        <img src="./images/gmail.svg" class="absolute w-6 opacity-30 top-3 left-3 z-40">
+                        <input type="text"  placeholder=" Email Address"
+                        class="inline-block w-full md:w-auto border-[#e8e8e8] outline-none focus:border-main border-[1px] rounded-3xl p-3 pl-9 pr-16 " required>
+                    </div>
+                    <button type="submit" id="submit" value=" " class="bg-main w-12 h-12 rounded-full -ml-10 absolute z-50 align-middle ">
+                </div>
+                <div class="block mt-6">
+                     <p class="text-myboldgray md:text-xs text-[10px]">We never share your info. View our <span class="text-black hover:text-main"><a href="#">Privacy Policy</a></span></p>    
+                </div>    
+            </div>
+    
+        </section>
+        </footer>
+</body>
+
+</html>

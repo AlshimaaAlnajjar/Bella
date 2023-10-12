@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Lora:ital,wght@0,600;0,700;1,600;1,700&family=Playfair+Display:wght@400;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="./styles/tailwind.css">
+    <title>Bella</title>
+    <link rel="icon" type="image/x-icon" href="./images/bella.bmp.png">
+</head>
+
+<body class="font-lato">
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #submit {
+            background-image: url(./images/submit.svg);
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+    <section class="bg-mygray/90 fixed top-0 left-0 w-full z-50">
+        <header class=" flex  justify-between py-1 px-3 md:px-6 items-center container">
+            <div class="inline-flex justify-center items-center">
+                <a href="./index.html"> <img class="inline-block md:w-[70px] w-[50px] h-[35px] md:h-[50px] mr-8 my-4"
+                        src="./images/logo.png"></a>
+
+                <ul class="lg:inline-flex hidden text-center  ">
+                    <h6>
+                        <li class="px-4 hover:underline"><a href="./index.html"> Home</a></li>
+                    </h6>
+                    <h6>
+                        <li class="px-4 hover:underline"><a href="./shop1.html">Shop</a></li>
+                    </h6>
+                    <h6>
+                        <li class="px-4 hover:underline"><a href="./blog1.html">Blog</a></li>
+                    </h6>
+                    <h6>
+                        <li class="px-4 hover:underline"><a href="./aboutus.html">About</a></li>
+                    </h6>
+                    <h6>
+                        <li class="px-4 hover:underline"><a href="./contact.html">Contact</a></li>
+                    </h6>
+                </ul>
+            </div>
+            <div class="inline-flex flex-nowrap justify-center items-center mx-3">
+                <div class=" relative inline-block">
+                    <img src="./images/searchblackicon.svg" class="absolute w-6 opacity-30 top-3 left-3 z-40">
+                    <input type="text" placeholder=" Search"
+                        class="inline-block w-full md:w-auto border-myboldgray outline-none focus:border-main border-[1px] rounded-3xl p-2 pl-9">
+                </div>
+                <a href="#"
+                    class="bg-main hover:bg-[#ed4d38] md:w-14 w-[46px] md:h-14 h-[44px] md:p-4 p-2 inline-block rounded-full ml-1 ">
+                    <img src="./images/logoicon.svg" class="w-full h-full">
+                </a>
+                <div class="lg:hidden items-center float-right mx-1 ">
+                    <button id="navIcon">
+                        <svg class=" w-7 h-7 text-black hover:text-main " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 28 28"
+                            stroke="currentColor">
+                            <path d="M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+        </header>
+        <div id="MobileMenu" class="hidden">
+            <ul class="bg-white ">
+                <h6>
+                    <li class="p-4"><a href="./index.html"> Home</a></li>
+                </h6>
+                <h6>
+                    <li class="p-4"><a href="./shop1.html">Shop</a></li>
+                </h6>
+                <h6>
+                    <li class="p-4"><a href="./blog1.html">Blog</a></li>
+                </h6>
+                <h6>
+                    <li class="p-4"><a href="./aboutus.html">About</a></li>
+                </h6>
+                <h6>
+                    <li class="p-4"><a href="./contact.html">Contact</a></li>
+                </h6>
+                <h6>
+                    <li class="p-4"><a href="./home.html">FAQ</a></li>
+                </h6>
+            </ul>
+        </div>
+    </section>
+    <script>
+        const btn = document.getElementById('navIcon');
+        const menu = document.getElementById('MobileMenu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        })
+    </script>
+    <!-- NAV END -->
+
+
+
+    <section id="first" class="bg-mygray pt-8">
+        <div class="container">
+            <div class="lg:p-12 lg:w-4/5 w-[95%] mx-auto py-12 my-[70px] relative">
+                <h1 class="font-Great"><span class="text-main">Contact</span> Us</h1>
+                <h1 class="font-lora md:text-5xl text-3xl">Let’s Get in Touch </h1>
+                <div class="bg-main w-24 h-[2px] my-[3%]"></div>
+
+                <div
+                    class="bg-white p-2 font-Lato justify-center items-center flex flex-nowrap border-[1px] border-myboldgray/20 absolute lg:right-24 -right-0 left-auto top-auto -bottom-2 rounded-3xl w-[120px] h-8">
+                    <a href="#" class="text-black hover:text-main inline-block text-[10px]">HOME</a>
+                    <img src="./images/to.svg" class="opacity-30 inline-block ">
+                    <div class="text-myboldgray text-[10px] ">CONTACT</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="container">
+        <section class="w-[95%] mx-auto my-[8%] flex flex-wrap lg:flex-nowrap">
+            <div class="lg:w-3/5 md:w-[96%] w-full mx-auto bg-mygray px-[10%] py-[8%]">
+                <h2 class="font-lora lg:text-3xl text-2xl mb-[2%]">Contact Us</h2>
+                <form>
+                    <label>
+                        <input type="text" placeholder=" Your Name"
+                            class=" font-Lato text-sm w-full mx-auto border-myboldgray/20 outline-none focus:border-main border-[1px] rounded-3xl p-3 pl-9 my-7 duration-300"
+                            required>
+                    </label>
+
+
+                    <label>
+                        <input type="text" placeholder=" Email Address"
+                            class=" font-Lato text-sm w-full border-myboldgray/20 outline-none focus:border-main border-[1px] rounded-3xl p-3 pl-9 mb-7 duration-300"
+                            required>
+                    </label>
+
+                    <label>
+                        <textarea placeholder="Massege" class=" font-Lato text-sm w-full min-h-[184px] border-myboldgray/20 outline-none focus:border-main border-[1px] rounded-3xl
+                     p-3 pl-9 mb-4 duration-300" required></textarea>
+                    </label>
+
+                    <button
+                        class=" font-Lato text-center text-xs font-bold tracking-[3px]  bg-[#ff6852] hover:bg-main duration-500 text-white rounded-3xl w-[145px]  p-4"
+                        type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+            <div class="px-[12%] lg:pl-[4%] xl:pl-[7%] my-[7%] w-full lg:w-[45%] xl:w-2/5">
+                <h4 class="font-lora my-5">Address</h4>
+                <p class="font-Lato text-myboldgray text-xs leading-6">Unit 286, Elastic Themes Campus,</p>
+                <p class="font-Lato text-myboldgray text-xs leading-6"> 2091 Mission Street,</p>
+                <p class="font-Lato text-myboldgray text-xs leading-6"> San Francisco, CA 94110</p>
+                <a href="#"
+                    class="inline-block tracking-[3px] mt-5 mb-10 border-b-2 border-black hover:border-main font-Lato text-xs duration-500">ON
+                    THE MAP</a>
+                <h6 class="font-Lato text-xs leading-6">Email us: <a href="#"
+                        class="text-myboldgray hover:underline font-thin">bella@template.com</a> </h6>
+                <h6 class="font-Lato text-xs leading-6 mb-10">Call us: <span class="text-myboldgray font-thin"> +1 213
+                        974-3898</span> </h6>
+                <h4 class="font-lora mb-[5%]">Follow</h4>
+                <a href="https://twitter.com/" class="inline-block p-3 border-2 border-mygray rounded-full"><img
+                        src="./images/twitter.svg"></a>
+                <a href="https://www.facebook.com/profile.php?id=100000507023755"
+                    class="inline-block p-3 border-2 border-mygray rounded-full"><img src="./images/facebook.svg"></a>
+                <a href="https://www.instagram.com/alshimaa.z.a/"
+                    class="inline-block p-3 border-2 border-mygray rounded-full"><img src="./images/instaicon.svg"></a>
+                <a href="https://www.pinterest.com/alshimaaalnajjar/"
+                    class="inline-block p-3 border-2 border-mygray rounded-full"><img src="./images/pentrest.svg"></a>
+            </div>
+        </section>
+    </div>
+
+    <section>
+        <div class="lg:w-2/5 w-full mx-auto text-center py-[3%] container">
+            <h1 class="font-Great text-2xl"><span class="text-main">Easy</span>to Find</h1>
+            <h1 class="font-lora lg:text-4xl text-3xl mt-[2%]">Our Store Location </h1>
+            <div class="bg-black w-28 mx-auto h-[3px] mt-[5%] "></div>
+        </div>
+    </section>
+    <section class="flex items-center justify-center md:mb-32 my-14  max-w-[1200px] mx-auto">
+        <div class=" w-11/12 md:w-[95%] lg:w-[80%] mx-auto md:h-[600px] h-[450px] bg-white"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97892.13628854144!2d-121.97560390124863!3d37.35230228238431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb615f4f9d29f%3A0xb0969f8ee6d0bbf!2zMjY1IFNhbnRhIEFuYSBDdCwgU3Vubnl2YWxlLCBDQSA5NDA4NdiMINin2YTZiNmE2KfZitin2Kog2KfZhNmF2KrYrdiv2Kk!5e0!3m2!1sar!2s!4v1670658273695!5m2!1sar!2s"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </section>
+
+    <section>
+        <div class=" w-11/12 md:w-[95%] lg:w-[50%] mx-auto text-center border-2 border-mygray py-16  container">
+            <h1 class="font-Great text-2xl">Get your<span class="text-main">10% off!</span></h1>
+            <h1 class="font-lora md:text-4xl px-8 md:p-0 mt-[2%]">Join Our Maling List </h1>
+            <div class="mt-[4%] relative inline-block">
+                <img src="./images/gmail.svg" class="absolute w-6 opacity-30 top-5 left-3 z-40">
+                <input type="text" placeholder=" Email Address"
+                    class="inline-block my-[3%] w-full md:w-auto border-[#e8e8e8] outline-none focus:border-main border-[1px] rounded-3xl p-3 pl-9 pr-16 "
+                    required>
+            </div>
+            <button
+                class=" font-Lato text-center text-xs font-bold tracking-[3px]  md:ml-3 bg-[#ff6852] hover:bg-main duration-500 text-white rounded-3xl md:w-[140px] w-[270px] mb-5 md:mb-0 p-4"
+                type="submit">SUBSCRIBE</button>
+            <div class="block mb-6">
+                <p class="text-myboldgray md:text-xs text-[9px]">We never share your info. View our <span
+                        class="text-black hover:text-main"><a href="#">Privacy Policy</a></span></p>
+            </div>
+        </div>
+    </section>
+
+
+    <a href="#first" id="ArrowUp"
+        class="fixed top-auto left-auto right-3 bottom-3 bg-black/50 hover:bg-main duration-700 rounded-full"><img
+            src="./images/warrow.png" class=" w-[40px] h-[40px] p-[20%] inline-block text-center self-center"></a>
+    <script>
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 100) {
+                document.getElementById('ArrowUp').style.display = 'block';
+            } else {
+                document.getElementById('ArrowUp').style.display = 'none';
+            }
+        });
+    </script>
+
+    <section class="container">
+        <div class=" lg:w-full md:w-[95%] w-11/12 mx-auto my-[10%] grid grid-cols-1 md:grid-cols-3 gap-2">
+            <div class=" grid grid-cols-2 grid-rows-2  ">
+                <a href="https://www.instagram.com/alshimaa.z.a/"
+                    class="inline-block pr-2 pb-2 relative hover:scale-95 duration-500 ">
+                    <img src="./images/end1.jpg" class=" w-full h-full">
+                    <div
+                        class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                        <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/alshimaa.z.a/"
+                    class="inline-block  pb-2 relative hover:scale-95 duration-500 ">
+                    <img src="./images/end2.jpg" class=" w-full h-full">
+                    <div
+                        class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                        <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/alshimaa.z.a/"
+                    class="inline-block  pr-2 relative hover:scale-95 duration-500 ">
+                    <img src="./images/end3.jpg" class=" w-full h-full">
+                    <div
+                        class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                        <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/alshimaa.z.a/"
+                    class="inline-block  relative hover:scale-95 duration-500 ">
+                    <img src="./images/end4.jpg" class=" w-full h-full">
+                    <div
+                        class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                        <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="bg-mygray flex items-center justify-center hover:scale-95 duration-500 p-[7%] ">
+                <a href="https://www.instagram.com/alshimaa.z.a/" class="inline-block  text-center">
+                    <img src="./images/end5.png" class=" align-middle" style="padding: 12% 25%;">
+                    <h1 class="font-Great"><span class="text-main">Follow </span>us on</h1>
+                    <h1 class="font-lora">Instagram</h1>
+                </a>
+            </div>
+            <div class=" grid grid-cols-2 grid-rows-2  ">
+                <a href="https://www.instagram.com/alshimaa.z.a/"
+                    class="inline-block pr-2 pb-2 relative hover:scale-95 duration-500 ">
+                    <img src="./images/end6.jpg" class=" w-full h-full">
+                    <div
+                        class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                        <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/alshimaa.z.a/"
+                    class="inline-block  pb-2 relative hover:scale-95 duration-500 ">
+                    <img src="./images/end7.jpg" class=" w-full h-full">
+                    <div
+                        class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                        <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/alshimaa.z.a/"
+                    class="inline-block  pr-2 relative hover:scale-95 duration-500 ">
+                    <img src="./images/end8.jpg" class=" w-full h-full">
+                    <div
+                        class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                        <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/alshimaa.z.a/"
+                    class="inline-block  relative hover:scale-95 duration-500 ">
+                    <img src="./images/end9.jpg" class=" w-full h-full">
+                    <div
+                        class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                        <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-mygray py-7 w-full">
+        <section
+            class=" lg:w-4/5 w-11/12 m-auto flex flex-wrap lg:flex-nowrap justify-between item-start my-[4%] md:px-6 lg:p-0 container">
+            <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+                <h6 class="mb-6 text-sm md:text-base">SHOP </h6>
+                <ul class="font-Lato">
+                    <a href="./shop1.html"
+                        class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3">
+                        <li>All Products</li>
+                    </a>
+                    <a href="./shop1.html"
+                        class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3">
+                        <li>Accessories</li>
+                    </a>
+                    <a href="./shop1.html"
+                        class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3">
+                        <li>Apparel</li>
+                    </a>
+                    <a href="./shop1.html"
+                        class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3">
+                        <li>Perfume</li>
+                    </a>
+                    <a href="./shop1.html"
+                        class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10">
+                        <li>Shoes</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+                <h6 class="mb-6 text-sm md:text-base">PAGES </h6>
+                <ul class="font-Lato">
+                    <a href="./index.html"
+                        class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3">
+                        <li>Home </li>
+                    </a>
+                    <a href="./blog1.html"
+                        class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3">
+                        <li>Blog</li>
+                    </a>
+                    <a href="./aboutus.html"
+                        class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3">
+                        <li>About</li>
+                    </a>
+                    <a href="./index.html"
+                        class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3">
+                        <li>FAQ</li>
+                    </a>
+                    <a href="./contact.html"
+                        class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+                <h6 class="mb-6 text-sm md:text-base">SERVICE </h6>
+                <ul class="font-Lato">
+                    <a href="#"
+                        class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3">
+                        <li>Search Results </li>
+                    </a>
+                    <a href="#"
+                        class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3">
+                        <li>404 Page</li>
+                    </a>
+                    <a href="#"
+                        class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10">
+                        <li>Protected Page</li>
+                    </a>
+
+                </ul>
+            </div>
+            <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+                <h6 class="mb-6 text-sm md:text-base">TEMPLATE </h6>
+                <ul class="font-Lato">
+                    <a href="#"
+                        class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3">
+                        <li>Style Guide</li>
+                    </a>
+                    <a href="#"
+                        class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3">
+                        <li>Changelog</li>
+                    </a>
+                    <a href="#"
+                        class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10">
+                        <li>Licenses</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="inline-block w-full lg:w-auto relative">
+                <h6 class="mb-6 text-sm md:text-base">NEWSLETTER </h6>
+                <div>
+                    <div class=" relative inline-block">
+                        <img src="./images/gmail.svg" class="absolute w-6 opacity-30 top-3 left-3 z-40">
+                        <input type="text" placeholder=" Email Address"
+                            class="inline-block w-full md:w-auto border-[#e8e8e8] outline-none focus:border-main border-[1px] rounded-3xl p-3 pl-9 pr-16 "
+                            required>
+                    </div>
+                    <button type="submit" id="submit" value=" "
+                        class="bg-main w-12 h-12 rounded-full -ml-10 absolute z-50 align-middle ">
+                </div>
+                <div class="block mt-6">
+                    <p class="text-myboldgray md:text-xs text-[10px]">We never share your info. View our <span
+                            class="text-black hover:text-main"><a href="#">Privacy Policy</a></span></p>
+                </div>
+            </div>
+
+        </section>
+    </footer>
+</body>
+
+</html>

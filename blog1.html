@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Lora:ital,wght@0,600;0,700;1,600;1,700&family=Playfair+Display:wght@400;700;900&display=swap'); </style>
+    <link rel="stylesheet" href="./styles/tailwind.css">
+    <title>Bella</title>
+    <link rel="icon" type="image/x-icon" href="./images/bella.bmp.png">
+</head>
+<body class="font-lato">
+    <style>
+        #submit{
+            background-image: url(./images/submit.svg);
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+        .container{
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right:auto ;
+        }
+    </style>
+       
+       <section class="bg-mygray/90 fixed top-0 left-0 w-full z-50">
+        <header class=" flex  justify-between py-1 px-3 md:px-6 items-center container">
+            <div class="inline-flex justify-center items-center">
+                <a href="./index.html"> <img class="inline-block md:w-[70px] w-[50px] h-[35px] md:h-[50px] mr-8 my-4"
+                        src="./images/logo.png"></a>
+
+                <ul class="lg:inline-flex hidden text-center  ">
+                    <h6>
+                        <li class="px-4 hover:underline"><a href="./index.html"> Home</a></li>
+                    </h6>
+                    <h6>
+                        <li class="px-4 hover:underline"><a href="./shop1.html">Shop</a></li>
+                    </h6>
+                    <h6>
+                        <li class="px-4 hover:underline"><a href="./blog1.html">Blog</a></li>
+                    </h6>
+                    <h6>
+                        <li class="px-4 hover:underline"><a href="./aboutus.html">About</a></li>
+                    </h6>
+                    <h6>
+                        <li class="px-4 hover:underline"><a href="./contact.html">Contact</a></li>
+                    </h6>
+                </ul>
+            </div>
+            <div class="inline-flex flex-nowrap justify-center items-center mx-3">
+                <div class=" relative inline-block">
+                    <img src="./images/searchblackicon.svg" class="absolute w-6 opacity-30 top-3 left-3 z-40">
+                    <input type="text" placeholder=" Search"
+                        class="inline-block w-full md:w-auto border-myboldgray outline-none focus:border-main border-[1px] rounded-3xl p-2 pl-9">
+                </div>
+                <a href="#"
+                    class="bg-main hover:bg-[#ed4d38]  md:w-14 w-[46px] md:h-14 h-[44px] md:p-4 p-2 inline-block rounded-full ml-1 ">
+                    <img src="./images/logoicon.svg" class="w-full h-full">
+                </a>
+                <div class="lg:hidden items-center float-right mx-1 ">
+                    <button id="navIcon">
+                        <svg class=" w-7 h-7 text-black hover:text-main " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 28 28"
+                            stroke="currentColor">
+                            <path d="M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+        </header>
+        <div id="MobileMenu" class="hidden">
+            <ul class="bg-white ">
+                <h6>
+                    <li class="p-4"><a href="./index.html"> Home</a></li>
+                </h6>
+                <h6>
+                    <li class="p-4"><a href="./shop1.html">Shop</a></li>
+                </h6>
+                <h6>
+                    <li class="p-4"><a href="./blog1.html">Blog</a></li>
+                </h6>
+                <h6>
+                    <li class="p-4"><a href="./aboutus.html">About</a></li>
+                </h6>
+                <h6>
+                    <li class="p-4"><a href="./contact.html">Contact</a></li>
+                </h6>
+                <h6>
+                    <li class="p-4"><a href="./home.html">FAQ</a></li>
+                </h6>
+            </ul>
+        </div>
+    </section>
+    <script>
+        const btn = document.getElementById('navIcon');
+        const menu = document.getElementById('MobileMenu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        })
+    </script>
+    <!-- NAV END -->
+
+    <section class="bg-mygray mt-8">
+        <div class="lg:p-12 lg:w-4/5 w-[95%] mx-auto py-12 my-[70px] relative">
+            <h1 class="font-Great"><span class="text-main">Bella's</span>  Blog</h1>
+            <h1 class="font-lora md:text-5xl text-3xl">Recent Posts </h1>
+            <div class="bg-main w-24 h-[2px] my-[3%]"></div>
+
+            <div class="bg-white p-2 font-Lato justify-center items-center flex flex-nowrap border-[1px] border-myboldgray/20 absolute lg:right-24 -right-0 left-auto top-auto -bottom-2 rounded-3xl w-[120px] h-8">
+            <a href="#" class="text-black hover:text-main inline-block text-[10px]">HOME</a>
+            <img src="./images/to.svg" class="opacity-30 inline-block ">
+            <div class="text-myboldgray text-[10px] ">BLOG</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full lg:w-4/5 mx-auto flex justify-between flex-wrap lg:flex-nowrap my-16 lg:my-0">
+        <div class="w-11/12 md:w-[96%] lg:w-3/4  mx-auto lg:m-[5%]  ">
+            <div>
+                <div class="h-[280px] md:h-[430px] overflow-hidden w-full">
+                    <img src="./images/blog1.jpg" class=" hover:scale-105 h-full w-full object-cover duration-700">
+                </div>
+                <div class="flex flex-nowrap justify-center items-center border-2 border-mygray border-l-2 border-l-main">
+                    <div class=" text-center  py-[6.5%] w-1/5 ">
+                        <h1 class="font-lora px-[6%] py-[4%]">5</h1>
+                        <p class="text-xs text-myboldgray">MAR 2019</p>
+                    </div>
+                    <div class="px-[6%] py-[4%] w-4/5 border-l-2 border-r-mygray">
+                        <p class="text-xs text-myboldgray my-3">PUBLISHED IN <span class="text-main hover:underline">NEW ARRIVALS</span></p>
+                        <h2 class="font-lora hover:text-main duration-500 text-xl md:text-3xl">How To Start A Business With Elastic Themes</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="my-12">
+                <div class="h-[280px] md:h-[430px] overflow-hidden w-full">
+                    <img src="./images/blog2.jpg" class=" hover:scale-105 h-full w-full object-cover duration-700">
+                </div>
+                <div class="flex flex-nowrap justify-center items-center border-2 border-mygray border-l-2 border-l-main">
+                    <div class=" text-center  py-[6.5%] w-1/5 ">
+                        <h1 class="font-lora px-[6%] py-[4%]">5</h1>
+                        <p class="text-xs text-myboldgray">MAR 2019</p>
+                    </div>
+                    <div class="px-[6%] py-[4%] w-4/5 border-l-2 border-r-mygray">
+                        <p class="text-xs text-myboldgray my-3">PUBLISHED IN <span class="text-main hover:underline">LIFESTYLE</span></p>
+                        <h2 class="font-lora hover:text-main duration-500 text-xl md:text-3xl">Quick Guide: How To Start With CSS Grid</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-3">
+                <div class="inline-block bg-white"> </div>
+
+                <div class="inline-flex text-stone-600 text-center  mx-auto text-sm font-medium items-center justify-center "><p>1/3</p></div> 
+                   
+                <div class="inline-flex relative items-center justify-end text-center">
+                        <a href="./blog2.html" class="inline-block w-full md:w-auto absolute md:mr-10 lg:mr-0 py-[4%] px-6 border-2 border-black rounded-3xl tracking-[3px] font-Lato text-sm font-bold
+                        hover:border-main hover:bg-main hover:text-white duration-500 hover:pr-10 hover:pl-10">
+                        <img src="./images2/linerev.svg" class="absolute top-[20%] right-3  w-6  icon hovericon">  
+                        NEXT</a>  
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+
+
+        <div class="w-full lg:w-1/4  lg:mx-0 md:w-1/2 p-[1%]  m-2">
+            <div>
+                <h4 class="font-lora lg:my-[14%] my-[4%]">Categories</h4>
+                <ul>
+                    <li class="w-full my-4"><a href="#" class="block text-base font-semibold hover:text-main hover:translate-x-1 duration-500 ">All Posts</a></li>
+                    <li class="w-full my-4"><a href="#" class="block text-base font-semibold hover:text-main hover:translate-x-1 duration-500">Fashion</a></li>
+                    <li class="w-full my-4"><a href="#" class="block text-base font-semibold hover:text-main hover:translate-x-1 duration-500 ">Lifestyle</a></li>
+                    <li class="w-full my-4"><a href="#" class="block text-base font-semibold hover:text-main hover:translate-x-1 duration-500 ">New Arrivals</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-lora my-[16%] mt-[30%] inline-block">Featured Posts</h4>
+                <div class="flex flex-nowrap my-[2%]">
+                    <div class="bg-cover bg-center bg-no-repeat w-[80px] h-[80px] inline-block" style="background-image: url(./images/blog2.jpg);"></div>
+                    <div class="inline-block ml-5 mt-1">
+                        <p class="text-xs text-myboldgray mt-1">FEB 26,2019</p>
+                        <a href="#" class=" text-sm font-semibold hover:text-main ">Quick Guide: How To start With Css Grid</a>
+                    </div>
+                </div>
+                <div class="flex flex-nowrap my-[6%]">
+                    <div class="bg-cover bg-center bg-no-repeat w-[110px] h-[80px] inline-block" style="background-image: url(./images/blog4.jpg);"></div>
+                    <div class="inline-block ml-5 mt-1">
+                        <p class="text-xs text-myboldgray mt-1">JAN 29,2019</p>
+                        <a href="#" class=" text-sm font-semibold hover:text-main ">Wondering How To Make Your Website Rock? Read This!</a>
+                    </div>
+                </div>
+                <div class="flex flex-nowrap my-[6%]">
+                    <div class="bg-cover bg-center bg-no-repeat w-[80px] h-[80px] inline-block" style="background-image: url(./images/blog5.jpg);"></div>
+                    <div class="inline-block ml-5 mt-1">
+                        <p class="text-xs text-myboldgray mt-1">JAN 8,2019</p>
+                        <a href="#" class=" text-sm font-semibold hover:text-main ">How Webflow Made Me A Better Designer</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-lora my-8 mt-[30%] inline-block">Tages</h4>
+                <div class="">
+                    <a href="#" class="inline-block p-2  my-1 mr-1 border-[1px] border-myboldgray hover:bg-main hover:text-white duration-500 text-xs text-center">FITNESS</a>
+                    <a href="#" class="inline-block p-2  my-1 mr-1 border-[1px] border-myboldgray hover:bg-main hover:text-white duration-500 text-xs text-center">TRAVEL</a>
+                    <a href="#" class="inline-block p-2  my-1 mr-1 border-[1px] border-myboldgray hover:bg-main hover:text-white duration-500 text-xs text-center">SOCIAL</a>
+                    <a href="#" class="inline-block p-2  my-1 mr-2 border-[1px] border-myboldgray hover:bg-main hover:text-white duration-500 text-xs text-center">INSTAGRAM</a>
+                    <a href="#" class="inline-block p-2  my-1 mr-2 border-[1px] border-myboldgray hover:bg-main hover:text-white duration-500 text-xs text-center">LIFE</a>
+                    <a href="#" class="inline-block p-2  my-1 mr-2 border-[1px] border-myboldgray hover:bg-main hover:text-white duration-500 text-xs text-center">PHOTOGRAPHY</a>
+                    <a href="#" class="inline-block p-2  my-1 mr-2 border-[1px] border-myboldgray hover:bg-main hover:text-white duration-500 text-xs text-center">LOOK</a>
+                    <a href="#" class="inline-block p-2  my-1 mr-2 border-[1px] border-myboldgray hover:bg-main hover:text-white duration-500 text-xs text-center">BEAUTY</a>
+                    <a href="#" class="inline-block p-2  my-1 mr-2 border-[1px] border-myboldgray hover:bg-main hover:text-white duration-500 text-xs text-center">EVENT</a>
+
+                </div>
+            </div>
+            <div>
+                <h1 class="font-lora md:text-xl text-xl my-5 mt-[30%]">Join Our Mailing List & Get <span class="text-main">10% <br class="inline-block lg:hidden">Discount</span> </h1>
+                <div class="my-[4%] relative inline-block">
+                    <img src="./images/gmail.svg" class="absolute w-6 opacity-30 top-5 left-3 z-40">
+                    <input type="text"  placeholder=" Email Address"
+                    class="inline-block my-[3%] w-full lg:w-auto border-[#e8e8e8] outline-none focus:border-main border-[1px] rounded-3xl p-3 pl-9 lg:pr-16 pr-[9rem]" required>
+                </div>
+                <button class=" font-Lato text-center text-xs font-bold tracking-[3px] bg-[#ff6852] hover:bg-main duration-500 text-white rounded-3xl  lg:w-[275px] w-[100%] md:w-[98%] p-4" type="submit">SUBSCRIBE</button>
+                <div class="block mt-6">
+                        <p class="text-myboldgray md:text-xs text-[9px]">We never share your info. View our <span class="text-black hover:text-main"><a href="#">Privacy Policy</a></span></p>    
+                </div>
+            </div>
+            <div class=" mt-[30%] border-main border-2 block h-auto lg:mb-[180px]">
+                        <div class="h-1/5 text-center p-4">
+                            <h2 class="font-Great text-lg"><span class="text-main">New</span> Arrivals</h2>
+                            <h6 class="font-lora font-bold">Explore Our Shop</h6>
+                        </div>
+                        <a href="shop1.html" class="inline-block relative">
+                            <img src="./images/bages.jpeg" class="w-full h-full">
+                            <div class="absolute left-0 right-0 top-0 bottom-0 inline-flex items-center justify-center text-center icon hovericon">
+                                <p class="inline-block absolute py-[6%] px-6 border-2 bg-white rounded-full tracking-[3px] font-Lato text-xs font-bold
+                                 duration-700 hoverpadding-l hovericon">
+                                  <img src="./images/shopblack.svg" class="absolute bottom-4 left-3  w-5  icon hovericon">  
+                                SHOP NOW</p>  
+                            </div>
+                        </a>   
+                    
+            </div>
+        </div>
+    </section>
+
+
+
+    <a href="./blog1.html" id="ArrowUp" class="fixed top-auto left-auto right-3 bottom-3 bg-black/50 hover:bg-main duration-700 rounded-full "><img src="./images/warrow.png" class=" w-[40px] h-[40px] p-[20%] inline-block text-center self-center"></a>
+    <script>
+            window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+              document.getElementById('ArrowUp').style.display = 'block';
+            } else {
+              document.getElementById('ArrowUp').style.display = 'none';
+            }
+          });
+    </script>
+    <footer class="bg-mygray py-7 w-full">
+        <section class=" lg:w-4/5 w-11/12 m-auto flex flex-wrap lg:flex-nowrap justify-between item-start my-[4%] md:px-6 lg:p-0">
+            <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+                <h6 class="mb-6 text-sm md:text-base">SHOP </h6>
+                <ul class="font-Lato">
+                    <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>All Products</li></a>
+                    <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Accessories</li></a>
+                    <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Apparel</li></a>
+                    <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Perfume</li></a>
+                    <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10"><li>Shoes</li></a>
+                </ul>
+            </div>
+            <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+                <h6 class="mb-6 text-sm md:text-base">PAGES </h6>
+                <ul class="font-Lato">
+                    <a href="./index.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Home </li></a>
+                    <a href="./blog1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Blog</li></a>
+                    <a href="./aboutus.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>About</li></a>
+                    <a href="./index.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>FAQ</li></a>
+                    <a href="./contact.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10"><li>Contact</li></a>
+                </ul>
+            </div>
+            <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+                <h6 class="mb-6 text-sm md:text-base">SERVICE </h6>
+                <ul class="font-Lato">
+                    <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Search Results </li></a>
+                    <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>404 Page</li></a>
+                    <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10"><li>Protected Page</li></a>
+    
+                </ul>
+            </div>
+            <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+                <h6 class="mb-6 text-sm md:text-base">TEMPLATE  </h6>
+                <ul class="font-Lato">
+                    <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Style Guide</li></a>
+                    <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Changelog</li></a>
+                    <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10"><li>Licenses</li></a>
+                </ul>
+            </div>
+            <div class="inline-block w-full lg:w-auto relative">
+                <h6 class="mb-6 text-sm md:text-base">NEWSLETTER  </h6>
+                <div >
+                    <div class=" relative inline-block">
+                        <img src="./images/gmail.svg" class="absolute w-6 opacity-30 top-3 left-3 z-40">
+                        <input type="text"  placeholder=" Email Address"
+                        class="inline-block w-full md:w-auto border-[#e8e8e8] outline-none focus:border-main border-[1px] rounded-3xl p-3 pl-9 pr-16 " required>
+                    </div>
+                    <button type="submit" id="submit" value=" " class="bg-main w-12 h-12 rounded-full -ml-10 absolute z-50 align-middle ">
+                </div>
+                <div class="block mt-6">
+                     <p class="text-myboldgray md:text-xs text-[10px]">We never share your info. View our <span class="text-black hover:text-main"><a href="#">Privacy Policy</a></span></p>    
+                </div>    
+            </div>
+    
+        </section>
+        </footer>
+    </body>
+    </html>

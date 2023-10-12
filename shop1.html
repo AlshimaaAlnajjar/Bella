@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Lora:ital,wght@0,600;0,700;1,600;1,700&family=Playfair+Display:wght@400;700;900&display=swap'); </style>
+    <link rel="stylesheet" href="./styles/tailwind.css">
+    <title>Bella</title>
+    <link rel="icon" type="image/x-icon" href="./images/bella.bmp.png">
+</head>
+<body class="font-lato">
+    <style>
+        #submit{
+            background-image: url(./images/submit.svg);
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+       
+       <section  class="bg-mygray/90 fixed top-0 left-0 w-full z-50">
+        <header class=" flex  justify-between py-1 px-3 md:px-6 items-center container">
+            <div class="inline-flex justify-center items-center">
+                <a href="./index.html"> <img class="inline-block md:w-[70px] w-[50px] h-[35px] md:h-[50px] mr-8 my-4" src="./images/logo.png"></a>
+
+                <ul class="lg:inline-flex hidden text-center  "> 
+                    <h6><li class="px-4 hover:underline"><a href="./index.html"> Home</a></li></h6>
+                    <h6><li class="px-4 hover:underline"><a href="./shop1.html">Shop</a></li></h6>
+                    <h6><li class="px-4 hover:underline"><a href="./blog1.html">Blog</a></li> </h6>
+                    <h6><li class="px-4 hover:underline"><a href="./aboutus.html">About</a></li></h6>
+                    <h6><li class="px-4 hover:underline"><a href="./contact.html">Contact</a></li></h6>
+                </ul>
+            </div>
+            <div class="inline-flex flex-nowrap justify-center items-center mx-3">
+                <div class=" relative inline-block">
+                    <img src="./images/searchblackicon.svg" class="absolute w-6 opacity-30 top-3 left-3 z-40">
+                    <input type="text"  placeholder=" Search"
+                        class="inline-block w-full md:w-auto border-myboldgray outline-none focus:border-main border-[1px] rounded-3xl p-2 pl-9">
+                </div>
+                <a href="#" class="bg-main hover:bg-[#ed4d38] md:w-14 w-[46px] md:h-14 h-[44px] md:p-4 p-2 inline-block rounded-full ml-1 ">
+                    <img src="./images/logoicon.svg" class="w-full h-full">
+                </a>
+                <div class="lg:hidden items-center float-right mx-1 ">
+                    <button id="navIcon">
+                        <svg class=" w-7 h-7 text-black hover:text-main " x-show="!showMenu" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" viewBox="0 0 28 28" stroke="currentColor">
+                            <path d="M4 12h16M4 18h16"></path>
+                            </svg>
+                    </button>
+                    
+                </div>
+            </div>
+        </header>
+    <div id="MobileMenu" class="hidden">
+            <ul class="bg-white "> 
+                <h6><li class="p-4"><a href="./index.html"> Home</a></li></h6>
+                <h6><li class="p-4"><a href="./shop1.html">Shop</a></li></h6>
+                <h6><li class="p-4"><a href="./blog1.html">Blog</a></li> </h6>
+                <h6><li class="p-4"><a href="./aboutus.html">About</a></li></h6>
+                <h6><li class="p-4"><a href="./contact.html">Contact</a></li></h6>
+                <h6><li class="p-4"><a href="./home.html">FAQ</a></li></h6>
+            </ul>
+    </div>  
+    </section>
+    <script>
+        const btn=document.getElementById('navIcon');
+        const menu=document.getElementById('MobileMenu');
+        btn.addEventListener('click',()=>{
+            menu.classList.toggle('hidden');
+        })
+    </script>
+    <!-- NAV END -->
+
+
+
+    <section id="first" class="bg-mygray pt-8">
+        <div class="lg:p-12 lg:w-4/5 w-[95%] mx-auto py-12 my-[70px] relative max-w-[1200px]">
+            <h1 class="font-Great"><span class="text-main">Best </span> Products</h1>
+            <h1 class="font-lora md:text-5xl text-3xl">Our Catalog</h1>
+            <div class="bg-main w-24 h-[2px] my-[3%]"></div>
+
+            <div class="bg-white p-2 font-Lato justify-center items-center flex flex-nowrap border-[1px] border-myboldgray/20 absolute lg:right-24 -right-0 left-auto top-auto -bottom-2 rounded-3xl w-[120px] h-8">
+            <a href="#" class="text-black hover:text-main inline-block text-[10px]">HOME</a>
+            <img src="./images/to.svg" class="opacity-30 inline-block ">
+            <div class="text-myboldgray text-[10px] ">SHOP</div>
+            </div>
+        </div>
+    </section>
+
+        <section class="w-full lg:w-4/5 mx-auto flex justify-between flex-wrap lg:flex-nowrap container">
+                <div class="w-full lg:w-1/5 p-[1%] lg:my-[6%] my-2">
+                    <div>
+                        <h4 class="font-lora lg:my-[14%] my-[4%] ml-2">Categories</h4>
+                        <a href="#" class="text-sm font-bold tracking-wider text-main lg:text-black hover:text-main duration-300 m-2"><img src="./images/to.svg" class="hidden md:inline-block">All Products </a>
+                        <ul class="flex md:flex-wrap flex-nowrap">
+                            <li class="  inline-block lg:w-full m-2"><a href="#" class="text-sm tracking-wider font-bold hover:text-main duration-300 ">Accessories</a></li>
+                            <li class="  inline-block lg:w-full m-2"><a href="#" class="text-sm tracking-wider font-bold hover:text-main duration-300">Apparel</a></li>
+                            <li class="  inline-block lg:w-full m-2"><a href="#" class="text-sm tracking-wider font-bold hover:text-main duration-300 ">Perfume</a></li>
+                            <li class="  inline-block lg:w-full m-2"><a href="#" class="text-sm tracking-wider font-bold hover:text-main duration-300 ">Shoes</a></li>
+                        </ul>
+                    </div>
+                    <div class="lg:block hidden sticky top-0">
+                        <h4 class="font-lora my-[16%] mt-[30%] inline-block">Featured</h4>
+                        <div class="flex flex-nowrap my-[2%]">
+                            <div class="bg-[url(./images/4.jpg)] bg-cover bg-center bg-no-repeat w-[60px] h-[75px] inline-block" style="background-image: url(./images/4.jpg);"></div>
+                            <div class="inline-block ml-4 mt-4">
+                                <a href="#" class=" text-xs font-semibold hover:text-main ">Banana Body Cream</a>
+                                <p class="text-xs  mt-1">$ 30.00 USD</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-nowrap my-[6%]">
+                            <div class="bg-[url(./apparel/4.jpg)] bg-cover bg-center bg-no-repeat w-[60px] h-[75px] inline-block" style="background-image: url(./images/apparel.jpg);"></div>
+                            <div class="inline-block ml-4 mt-4">
+                                <a href="#" class=" text-xs font-semibold hover:text-main ">Cotton Flannel Dress</a>
+                                <p class="text-xs  mt-1">$ 49.95 USD  <span class="text-[10px]"><s>   $ 74.95 USD</s></span></p>
+                            </div>
+                        </div>
+                        <div class="flex flex-nowrap my-[6%]">
+                            <div class="bg-[url(./images/8.jpeg)] bg-cover bg-center bg-no-repeat w-[60px] h-[75px] inline-block" style="background-image: url(./images/8.jpeg);"></div>
+                            <div class="inline-block ml-4 mt-4">
+                                <a href="#" class=" text-xs font-semibold hover:text-main ">Icon Baseball Hat</a>
+                                <p class="text-xs  mt-1">$ 19.95 USD</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="lg:w-[75%] w-full grid grid-cols-1 md:grid-cols-3 py-[2%]">
+               <div class="text-center  my-10 ">
+                    <a href="./details.html" class="inline-block relative lg:h-[340px] w-11/12">
+                        <img src="./images2/1.jpg" class="w-full h-full hover:hidden">
+                        <div class="flex absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-[1] duration-300 items-center justify-center">
+                            <img src="./images2/1hover.jpg" class="w-full h-full">
+                        </div>
+                        <div class=" absolute left-auto w-[40px] h-[40px] right-2 bottom-2 top-auto inline-block p-2 border-2 bg-white rounded-full hover:scale-110">
+                            <img src="./images/imgp.svg" class="w-full h-full">
+                        </div>
+                    </a>
+                    <h1 class="md:text-sm text-xs font-bold my-4 px-2">Knit Turtleneck Sweater</h1>
+                    <p class="font-thin text-sm text-stone-600"> $ 54.95 USD</p>
+                </div>    
+                <div class="text-center my-10 ">
+                    <a href="#" class="inline-block relative lg:h-[340px] w-11/12">
+                        <img src="./images2/2.jpg" class="w-full h-full hover:hidden">
+                        <div class="flex absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-[1] duration-300 items-center justify-center">
+                            <img src="./images2/2hover.jpg" class="w-full h-full">
+                        </div>
+                        <div class=" absolute left-auto w-[40px] h-[40px] right-2 bottom-2 top-auto inline-block p-2 border-2 bg-white rounded-full hover:scale-110">
+                            <img src="./images/imgp.svg" class="w-full h-full">
+                        </div>
+                    </a>
+                    <h1 class="md:text-sm text-xs font-bold my-4 px-2">Flaux Leather Flip Flop</h1>
+                    <p class="font-thin text-sm text-stone-600"> $ 19.95 USD</p>
+                </div>
+
+                <div class="text-center my-10 ">
+                    <a href="#" class="inline-block relative lg:h-[340px] w-11/12">
+                        <img src="./images2/3.jpg" class="w-full h-full hover:hidden">
+                        <div class="flex absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-[1] duration-300 items-center justify-center">
+                            <img src="./images2/3hover.jpg" class="w-full h-full">
+                        </div>
+                        <div class=" absolute left-auto w-[40px] h-[40px] right-2 bottom-2 top-auto inline-block p-2 border-2 bg-white rounded-full hover:scale-110">
+                            <img src="./images/imgp.svg" class="w-full h-full">
+                        </div>
+                    </a>
+                    <h1 class="md:text-sm text-xs font-bold my-4 px-2">Relaxed Logo Hoodie</h1>
+                    <p class="font-thin text-sm text-stone-600">$ 44.95 USD</p>
+                </div>
+
+                <div class="text-center  my-10 ">
+                    <a href="#" class="inline-block relative lg:h-[340px] w-11/12">
+                        <img src="./images2/4.jpg" class="w-full h-full hover:hidden">
+                        <div class="flex absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-[1] duration-300 items-center justify-center">
+                            <img src="./images2/4hover.jpg" class="w-full h-full">
+                        </div>
+                        <div class=" absolute left-auto w-[40px] h-[40px] right-2 bottom-2 top-auto inline-block p-2 border-2 bg-white rounded-full hover:scale-110">
+                            <img src="./images/imgp.svg" class="w-full h-full">
+                        </div>
+                    </a>
+                    <h1 class="md:text-sm text-xs font-bold my-4 px-2">Classic Stretch Mid-Rise Super Skinny Jeans</h1>
+                    <p class="font-thin text-sm text-stone-600"> $ 59.95 USD</p>
+                </div>
+
+                <div class="text-center  my-10 ">
+                    <a href="#" class="inline-block relative lg:h-[340px] w-11/12">
+                        <img src="./images2/5.jpg" class="w-full h-full hover:hidden">
+                        <div class="flex absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-[1] duration-300 items-center justify-center">
+                           <img src="./images2/5hover.jpg" class="w-full h-full">
+                        </div>
+                        <div class=" absolute left-auto w-[40px] h-[40px] right-2 bottom-2 top-auto inline-block p-2 border-2 bg-white rounded-full hover:scale-110">
+                            <img src="./images/imgp.svg" class="w-full h-full">
+                        </div>
+                    </a>
+                    <h1 class="md:text-sm text-xs font-bold my-4 px-2">Hollister Lo Sneaker</h1>
+                    <p class="font-thin text-sm text-stone-600"> $ 29.95 USD</p>
+                </div>
+
+                <div class="text-center my-10 ">
+                    <a href="#" class="inline-block relative lg:h-[340px] w-11/12">
+                        <img src="./images2/6.jpg" class="w-full h-full hover:hidden">
+                        <div class="flex absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-[1] duration-300 items-center justify-center">
+                            <img src="./images2/6hover.jpg" class="w-full h-full">
+                        </div>
+                        <div class=" absolute left-auto w-[40px] h-[40px] right-2 bottom-2 top-auto inline-block p-2 border-2 bg-white rounded-full hover:scale-110">
+                            <img src="./images/imgp.svg" class="w-full h-full">
+                        </div>
+                    </a>
+                    <h1 class="md:text-sm text-xs font-bold my-4 px-2">Festival Vibes Perfume</h1>
+                    <p class="font-thin text-sm text-stone-600"> $ 38.00 USD</p>
+                </div>
+
+                <div class="text-center my-10 ">
+                    <a href="#" class="inline-block relative lg:h-[340px] w-11/12">
+                        <img src="./images2/7.jpg" class="w-full h-full hover:hidden">
+                        <div class="flex absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-[1] duration-300 items-center justify-center">
+                            <img src="./images2/7hover.jpg" class="w-full h-full">
+                        </div>
+                        <div class=" absolute left-auto w-[40px] h-[40px] right-2 bottom-2 top-auto inline-block p-2 border-2 bg-white rounded-full hover:scale-110">
+                            <img src="./images/imgp.svg" class="w-full h-full">
+                        </div>
+                    </a>
+                    <h1 class="md:text-sm text-xs font-bold my-4 px-2">Banana Body Cream</h1>
+                    <p class="font-thin text-sm text-stone-600">$ 30.00 USD</p>
+                </div>
+
+                <div class="text-center my-10 ">
+                    <a href="#" class="inline-block relative lg:h-[340px] w-11/12">
+                        <img src="./images2/8.jpg" class="w-full h-full hover:hidden">
+                        <div class="flex absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-[1] duration-300 items-center justify-center">
+                            <img src="./images2/8hover.jpg" class="w-full h-full">
+                        </div>
+                        <div class=" absolute left-auto w-[40px] h-[40px] right-2 bottom-2 top-auto inline-block p-2 border-2 bg-white rounded-full hover:scale-110">
+                            <img src="./images/imgp.svg" class="w-full h-full">
+                        </div>
+                    </a>
+                    <h1 class="md:text-sm text-xs font-bold my-4 px-2">Sunski Dipsea Sunglasses</h1>
+                    <p class="font-thin text-sm text-stone-600">$ 29.99 USD</p>
+                </div>
+
+                <div class="text-center my-10 ">
+                    <a href="#" class="inline-block relative lg:h-[340px] w-11/12">
+                        <img src="./images2/9.jpg" class="w-full h-full hover:hidden">
+                        <div class="flex absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-[1] duration-300 items-center justify-center">
+                            <img src="./images2/9hover.jpg" class="w-full h-full">
+                        </div>
+                        <div class=" absolute left-auto w-[40px] h-[40px] right-2 bottom-2 top-auto inline-block p-2 border-2 bg-white rounded-full hover:scale-110">
+                            <img src="./images/imgp.svg" class="w-full h-full">
+                        </div>
+                        <div class=" absolute left-auto right-2 bottom-auto top-2 inline-block p-2 px-3 border-2 bg-main rounded-2xl ">
+                            <p class="text-white text-[9px] tracking-widest font-bold">SALE</p>
+                        </div>
+                    </a>
+                    <h1 class="md:text-sm text-xs font-bold my-4 px-2">Reversible Sherpa Windbreaker</h1>
+                    <p class="font-thin text-sm text-stone-600 ">$ 69.95 USD    <span class="text-xs text-main ml-2"><s>   $ 88.95 USD</s></span> </p>
+                </div>
+
+                <div class="md:h-[100px] md:w-11/12 w-0 h-0 bg-white"> </div>
+
+                <div class="text-stone-600 text-center md:w-[270px] w-11/12 mx-auto md:h-[120px]  text-sm font-medium flex items-center justify-center "><p>1/2</p></div> 
+                   
+                <div class="relative md:w-[270px] w-11/12 mx-auto h-[120px] flex items-center justify-end mb-10 text-center">
+                        <a href="shop2.html" class="inline-block w-full md:w-auto absolute md:mr-10 lg:mr-0 py-[4%] px-6 border-2 border-black rounded-3xl tracking-[3px] font-Lato text-sm font-bold
+                        hover:border-main hover:bg-main hover:text-white duration-500 hover:pr-12 hover:pl-10">
+                        <img src="./images2/linerev.svg" class="absolute top-[20%] right-3  w-6  icon hovericon">  
+                        NEXT</a>  
+                    </div>
+                </div>
+        </section>
+
+
+        <a href="#first" id="ArrowUp" class="fixed top-auto left-auto right-3 bottom-3 bg-black/50 hover:bg-main duration-700 rounded-full "><img src="./images/warrow.png" class=" w-[40px] h-[40px] p-[20%] inline-block text-center self-center"></a>
+        <script>
+            window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+              document.getElementById('ArrowUp').style.display = 'block';
+            } else {
+              document.getElementById('ArrowUp').style.display = 'none';
+            }
+          });
+        </script>
+        <section class="container">
+            <div class=" lg:w-full md:w-[95%] w-11/12 mx-auto my-[10%] grid grid-cols-1 md:grid-cols-3 gap-2">
+                <div class=" grid grid-cols-2 grid-rows-2  ">
+                    <a href="https://www.instagram.com/alshimaa.z.a/" class="inline-block pr-2 pb-2 relative hover:scale-95 duration-500 ">
+                        <img src="./images/end1.jpg" class=" w-full h-full">
+                        <div class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                            <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/alshimaa.z.a/" class="inline-block  pb-2 relative hover:scale-95 duration-500 ">
+                        <img src="./images/end2.jpg" class=" w-full h-full">
+                        <div class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                            <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/alshimaa.z.a/" class="inline-block  pr-2 relative hover:scale-95 duration-500 ">
+                        <img src="./images/end3.jpg" class=" w-full h-full">
+                        <div class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                            <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/alshimaa.z.a/" class="inline-block  relative hover:scale-95 duration-500 ">
+                        <img src="./images/end4.jpg" class=" w-full h-full">
+                        <div class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                            <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                        </div>
+                    </a>
+                </div>
+    
+    
+                <div class="bg-mygray flex items-center justify-center hover:scale-95 duration-500 p-[7%] ">
+                    <a href="https://www.instagram.com/alshimaa.z.a/" class="inline-block  text-center">
+                        <img src="./images/end5.png" class=" align-middle" style="padding: 12% 25%;" >
+                        <h1 class="font-Great"><span class="text-main">Follow </span>us on</h1>
+                        <h1 class="font-lora">Instagram</h1>
+                    </a>
+                </div>
+                    <div class=" grid grid-cols-2 grid-rows-2  ">
+                        <a href="https://www.instagram.com/alshimaa.z.a/" class="inline-block pr-2 pb-2 relative hover:scale-95 duration-500 ">
+                            <img src="./images/end6.jpg" class=" w-full h-full">
+                            <div class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                                <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/alshimaa.z.a/" class="inline-block  pb-2 relative hover:scale-95 duration-500 ">
+                            <img src="./images/end7.jpg" class=" w-full h-full">
+                            <div class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                                <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/alshimaa.z.a/" class="inline-block  pr-2 relative hover:scale-95 duration-500 ">
+                            <img src="./images/end8.jpg" class=" w-full h-full">
+                            <div class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                                <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/alshimaa.z.a/" class="inline-block  relative hover:scale-95 duration-500 ">
+                            <img src="./images/end9.jpg" class=" w-full h-full">
+                            <div class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                                <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                            </div>
+                        </a>
+                    </div>
+            </div>
+        </section>
+    
+    
+    
+    
+        
+        <footer class="bg-mygray py-7 w-full">
+            <section class=" lg:w-4/5 w-11/12 m-auto flex flex-wrap lg:flex-nowrap justify-between item-start my-[4%] md:px-6 lg:p-0">
+                <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+                    <h6 class="mb-6 text-sm md:text-base">SHOP </h6>
+                    <ul class="font-Lato">
+                        <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>All Products</li></a>
+                        <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Accessories</li></a>
+                        <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Apparel</li></a>
+                        <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Perfume</li></a>
+                        <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10"><li>Shoes</li></a>
+                    </ul>
+                </div>
+                <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+                    <h6 class="mb-6 text-sm md:text-base">PAGES </h6>
+                    <ul class="font-Lato">
+                        <a href="./index.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Home </li></a>
+                        <a href="./blog1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Blog</li></a>
+                        <a href="./aboutus.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>About</li></a>
+                        <a href="./index.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>FAQ</li></a>
+                        <a href="./contact.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10"><li>Contact</li></a>
+                    </ul>
+                </div>
+                <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+                    <h6 class="mb-6 text-sm md:text-base">SERVICE </h6>
+                    <ul class="font-Lato">
+                        <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Search Results </li></a>
+                        <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>404 Page</li></a>
+                        <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10"><li>Protected Page</li></a>
+        
+                    </ul>
+                </div>
+                <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+                    <h6 class="mb-6 text-sm md:text-base">TEMPLATE  </h6>
+                    <ul class="font-Lato">
+                        <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Style Guide</li></a>
+                        <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Changelog</li></a>
+                        <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10"><li>Licenses</li></a>
+                    </ul>
+                </div>
+                <div class="inline-block w-full lg:w-auto relative">
+                    <h6 class="mb-6 text-sm md:text-base">NEWSLETTER  </h6>
+                    <div >
+                        <div class=" relative inline-block">
+                            <img src="./images/gmail.svg" class="absolute w-6 opacity-30 top-3 left-3 z-40">
+                            <input type="text"  placeholder=" Email Address"
+                            class="inline-block w-full md:w-auto border-[#e8e8e8] outline-none focus:border-main border-[1px] rounded-3xl p-3 pl-9 pr-16 " required>
+                        </div>
+                        <button type="submit" id="submit" value=" " class="bg-main w-12 h-12 rounded-full -ml-10 absolute z-50 align-middle ">
+                    </div>
+                    <div class="block mt-6">
+                         <p class="text-myboldgray md:text-xs text-[10px]">We never share your info. View our <span class="text-black hover:text-main"><a href="#">Privacy Policy</a></span></p>    
+                    </div>    
+                </div>
+        
+            </section>
+            </footer>
+    </body>
+    </html>

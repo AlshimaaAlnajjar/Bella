@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Lora:ital,wght@0,600;0,700;1,600;1,700&family=Playfair+Display:wght@400;700;900&display=swap'); </style>
+    <link rel="stylesheet" href="./styles/tailwind.css">
+    <title>Bella</title>
+    <link rel="icon" type="image/x-icon" href="./images/bella.bmp.png">
+</head>
+<body class="font-lato">
+    <style>
+        #submit{
+            background-image: url(./images/submit.svg);
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+        .container{
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+       
+       <div id="first" class="h-0 w-0 opacity-0"></div>
+       <section class="bg-mygray/90 fixed top-0 left-0 w-full z-50">
+           <header class=" flex  justify-between py-1 px-3 md:px-6 items-center container">
+               <div class="inline-flex justify-center items-center">
+                   <a href="./index.html"> <img class="inline-block md:w-[70px] w-[50px] h-[35px] md:h-[50px] mr-8 my-4"
+                           src="./images/logo.png"></a>
+   
+                   <ul class="lg:inline-flex hidden text-center  ">
+                       <h6>
+                           <li class="px-4 hover:underline"><a href="./index.html"> Home</a></li>
+                       </h6>
+                       <h6>
+                           <li class="px-4 hover:underline"><a href="./shop1.html">Shop</a></li>
+                       </h6>
+                       <h6>
+                           <li class="px-4 hover:underline"><a href="./blog1.html">Blog</a></li>
+                       </h6>
+                       <h6>
+                           <li class="px-4 hover:underline"><a href="./aboutus.html">About</a></li>
+                       </h6>
+                       <h6>
+                           <li class="px-4 hover:underline"><a href="./contact.html">Contact</a></li>
+                       </h6>
+                   </ul>
+               </div>
+               <div class="inline-flex flex-nowrap justify-center items-center mx-3">
+                   <div class=" relative inline-block">
+                       <img src="./images/searchblackicon.svg" class="absolute w-6 opacity-30 top-3 left-3 z-40">
+                       <input type="text" placeholder=" Search"
+                           class="inline-block w-full md:w-auto border-myboldgray outline-none focus:border-main border-[1px] rounded-3xl p-2 pl-9">
+                   </div>
+                   <a href="#"
+                       class="bg-main hover:bg-[#ed4d38]  md:w-14 w-[46px] md:h-14 h-[44px] md:p-4 p-2 inline-block rounded-full ml-1 ">
+                       <img src="./images/logoicon.svg" class="w-full h-full">
+                   </a>
+                   <div class="lg:hidden items-center float-right mx-1 ">
+                       <button id="navIcon">
+                           <svg class=" w-7 h-7 text-black hover:text-main " x-show="!showMenu" fill="none"
+                               stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 28 28"
+                               stroke="currentColor">
+                               <path d="M4 12h16M4 18h16"></path>
+                           </svg>
+                       </button>
+   
+                   </div>
+               </div>
+           </header>
+           <div id="MobileMenu" class="hidden">
+               <ul class="bg-white ">
+                   <h6>
+                       <li class="p-4"><a href="./index.html"> Home</a></li>
+                   </h6>
+                   <h6>
+                       <li class="p-4"><a href="./shop1.html">Shop</a></li>
+                   </h6>
+                   <h6>
+                       <li class="p-4"><a href="./blog1.html">Blog</a></li>
+                   </h6>
+                   <h6>
+                       <li class="p-4"><a href="./aboutus.html">About</a></li>
+                   </h6>
+                   <h6>
+                       <li class="p-4"><a href="./contact.html">Contact</a></li>
+                   </h6>
+                   <h6>
+                       <li class="p-4"><a href="./home.html">FAQ</a></li>
+                   </h6>
+               </ul>
+           </div>
+       </section>
+       <script>
+           const btn = document.getElementById('navIcon');
+           const menu = document.getElementById('MobileMenu');
+           btn.addEventListener('click', () => {
+               menu.classList.toggle('hidden');
+           })
+       </script>
+       <!-- NAV END -->
+
+    <section class="bg-mygray mt-8">
+        <div class="lg:p-12 lg:w-4/5 w-[95%] mx-auto py-12 my-[70px] relative container">
+        <h1 class="font-Great"><span class="text-main">About </span> Us</h1>
+        <h1 class="font-lora md:text-5xl text-3xl">Our Story</h1>
+        <div class="bg-main w-24 h-[2px] my-[3%]"></div>
+
+        <div class="bg-white p-2 font-Lato justify-center items-center flex flex-nowrap border-[1px] border-myboldgray/20 absolute lg:right-24 -right-0 left-auto top-auto -bottom-2 rounded-3xl w-[120px] h-8">
+        <a href="#" class="text-black hover:text-main inline-block text-[10px]">HOME</a>
+        <img src="./images/to.svg" class="opacity-30 inline-block ">
+        <div class="text-myboldgray text-[10px] ">ABOUT</div>
+        </div>
+    </div>
+</section>
+
+
+    <section class="w-[80%] mx-auto mt-[12%] flex flex-col-reverse lg:flex-row container">
+        <div class="lg:w-1/2 w-full py-[7%] md:pr-[9%] ">
+            <h1 class="font-Great md:text-3xl text-2xl"><span class="text-main">Webflow</span> Ecommerce </h1>
+            <h1 class="font-lora md:text-4xl text-2xl">A Perfect Template for Your Online Store</h1>
+            <div class="bg-black w-24 h-[2px] my-[6%]"></div>
+            <p class="font-Lato text-myboldgray text-sm leading-6 mb-[5%] ">A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.            </p>
+            <p class="font-Lato text-myboldgray text-sm leading-6 ">There is no magic formula to write <span class="text-main hover:decoration-main hover:underline"><a href="#">perfect ad copy</a></span>; it is based on a number of factors, including ad placement, demographic, even the consumer’s mood when they see your ad. Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper.</p>
+                <div class="relative w-[300px] h-[150px]">
+                    <a href="#" class="inline-block absolute my-14 py-[3%] px-7 border-2 border-black rounded-3xl tracking-[3px] font-Lato text-sm font-bold
+                      hover:border-main hover:bg-main hover:text-white duration-500 hover:px-12">
+                      <img src="./images/submit.svg" class="absolute top-[20%] left-4  w-6  icon hovericon">  
+                       DROP US A LINE</a>  
+                </div>
+        </div>
+        <div class="lg:w-1/2 w-full h-[400px] md:h-[700px] lg:h-auto bg-no-repeat bg-cover bg-center " style="background-image: url(./images/about1.jpeg);"></div>
+    </section>
+
+
+    <section class=" w-full h-[650px] bg-cover bg-fixed bg-center bg-no-repeat my-[8%] relative container" style="background-image: url(./images/gback.jpg);">
+        <div class="bg-white w-[80%] mx-auto lg:w-1/2 absolute top-[25%] left-[9%] lg:top-[22%] lg:left-[22%] lg:p-16 md:p-16 p-6  text-center">
+            <h1 class="font-Great text-2xl "><span class="text-main">Beautifully </span> Designed Template </h1>
+            <p class="font-Playfair text-base md:text-lg my-8 text-stone-700">“If it’s a billboard ad, you’ll need a super catchy  headline  and simple design due to the speed at which people will pass.”</p>
+            <p class="font-bold font-Lato text-black text-sm md:text-sm px-6">Summer Adams <span class="text-myboldgray font-thin">—  CEO of Bella Store</span> </p>
+        </div>
+    </section>
+
+
+
+    <section class="lg:w-4/5 md:w-[96%] w-[87%] mx-auto mt-[12%] container">
+        <h1 class="font-lora text-3xl  lg:text-4xl mb-8 ">Crafted by Elastic Themes</h1>
+        <div class="flex flex-wrap md:flex-nowrap ">
+            <div class="w-full md:w-[48%] mr-[3%]">
+                <p class="font-Lato text-myboldgray text-sm leading-6 mb-[6%] ">A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy; it is based on a number of factors, including ad placement, demographic, even the consumer’s mood.</p>
+                <p class="font-Lato text-myboldgray text-sm leading-6 ">So how is any writer supposed to pen a stunning piece of advertising copy — copy that sizzles and sells? The following tips will jumpstart your creative thinking and help you write a better ad. Consumers are inundated with ads, so it’s vital that your ad catches the eye and immediately grabs interest. You could do this with a headline or slogan (such as VW’s “Drivers Wanted” campaign), color or layout (Target’s new colorful, simple ads are a</p>
+            </div>
+            <div class="w-full md:w-[48%]">
+                <p class="font-Lato text-myboldgray text-sm leading-6 mb-[6%] ">testimony to this) or illustration (such as the Red Bull characters or Zoloft’s depressed ball and his ladybug friend). Promises Credible Benefit: To feel compelled by an ad, the consumer must stand to gain something; the product is often not enough. What would the consumer gain by using your product or service? This could be tangible, like a free gift; prestige, power or fame. But remember: you must be able to make good on that promise, so don’t offer anything unreasonable.</p>
+                <p class="font-Lato text-myboldgray text-sm leading-6">Grabbing the consumer’s attention isn’t enough; you have to keep that attention for at least a few seconds. This is where your benefits come into play or a product description that sets your offer apart from the others.</p>
+            </div>
+        </div>
+        <a href="#" class="inline-block tracking-widest mt-10 border-b-2 border-black hover:border-main font-Lato text-xs duration-500">EXPLORE OUR SHOP</a>
+    </section>
+
+    <a href="#first" id="ArrowUp" class="fixed top-auto left-auto right-3 bottom-3 bg-black/50 hover:bg-main duration-700 rounded-full "><img src="./images/warrow.png" class=" w-[40px] h-[40px] p-[20%] inline-block text-center self-center"></a>
+    <script>
+            window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+              document.getElementById('ArrowUp').style.display = 'block';
+            } else {
+              document.getElementById('ArrowUp').style.display = 'none';
+            }
+          });
+    </script>
+
+    <section>
+        <div class=" lg:w-4/5 md:w-[95%] w-11/12 mx-auto my-[10%] grid grid-cols-1 md:grid-cols-3 gap-2">
+            <div class=" grid grid-cols-2 grid-rows-2  ">
+                <a href="https://www.instagram.com/alshimaa.z.a/" class="inline-block pr-2 pb-2 relative hover:scale-95 duration-500 ">
+                    <img src="./images/end1.jpg" class=" w-full h-full">
+                    <div class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                        <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/alshimaa.z.a/" class="inline-block  pb-2 relative hover:scale-95 duration-500 ">
+                    <img src="./images/end2.jpg" class=" w-full h-full">
+                    <div class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                        <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/alshimaa.z.a/" class="inline-block  pr-2 relative hover:scale-95 duration-500 ">
+                    <img src="./images/end3.jpg" class=" w-full h-full">
+                    <div class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                        <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/alshimaa.z.a/" class="inline-block  relative hover:scale-95 duration-500 ">
+                    <img src="./images/end4.jpg" class=" w-full h-full">
+                    <div class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                        <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="bg-mygray flex items-center justify-center hover:scale-95 duration-500 p-[7%] ">
+                <a href="https://www.instagram.com/alshimaa.z.a/" class="inline-block  text-center">
+                    <img src="./images/end5.png" class=" align-middle" style="padding: 12% 25%;" >
+                    <h1 class="font-Great"><span class="text-main">Follow </span>us on</h1>
+                    <h1 class="font-lora">Instagram</h1>
+                </a>
+            </div>
+                <div class=" grid grid-cols-2 grid-rows-2  ">
+                    <a href="https://www.instagram.com/alshimaa.z.a/" class="inline-block pr-2 pb-2 relative hover:scale-95 duration-500 ">
+                        <img src="./images/end6.jpg" class=" w-full h-full">
+                        <div class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                            <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/alshimaa.z.a/" class="inline-block  pb-2 relative hover:scale-95 duration-500 ">
+                        <img src="./images/end7.jpg" class=" w-full h-full">
+                        <div class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                            <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/alshimaa.z.a/" class="inline-block  pr-2 relative hover:scale-95 duration-500 ">
+                        <img src="./images/end8.jpg" class=" w-full h-full">
+                        <div class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                            <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/alshimaa.z.a/" class="inline-block  relative hover:scale-95 duration-500 ">
+                        <img src="./images/end9.jpg" class=" w-full h-full">
+                        <div class=" absolute left-0 right-0 bottom-0 top-0 opacity-0 hover:opacity-100 flex justify-center items-center ">
+                            <img src="./images/instaicon.svg" class="bg-white p-2 rounded-full">
+                        </div>
+                    </a>
+                </div>
+        </div>
+    </section>
+
+
+
+
+    
+    <footer class="bg-mygray py-7 w-full">
+    <section class=" lg:w-4/5 w-11/12 m-auto flex flex-wrap lg:flex-nowrap justify-between item-start my-[4%] md:px-6 lg:p-0">
+        <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+            <h6 class="mb-6 text-sm md:text-base">SHOP </h6>
+            <ul class="font-Lato">
+                <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>All Products</li></a>
+                <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Accessories</li></a>
+                <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Apparel</li></a>
+                <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Perfume</li></a>
+                <a href="./shop1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10"><li>Shoes</li></a>
+            </ul>
+        </div>
+        <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+            <h6 class="mb-6 text-sm md:text-base">PAGES </h6>
+            <ul class="font-Lato">
+                <a href="./index.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Home </li></a>
+                <a href="./blog1.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Blog</li></a>
+                <a href="./aboutus.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>About</li></a>
+                <a href="./index.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>FAQ</li></a>
+                <a href="./contact.html" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10"><li>Contact</li></a>
+            </ul>
+        </div>
+        <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+            <h6 class="mb-6 text-sm md:text-base">SERVICE </h6>
+            <ul class="font-Lato">
+                <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Search Results </li></a>
+                <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>404 Page</li></a>
+                <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10"><li>Protected Page</li></a>
+
+            </ul>
+        </div>
+        <div class="inline-block w-1/2 md:w-1/4 lg:w-auto">
+            <h6 class="mb-6 text-sm md:text-base">TEMPLATE  </h6>
+            <ul class="font-Lato">
+                <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Style Guide</li></a>
+                <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3"><li>Changelog</li></a>
+                <a href="#" class="block text-myboldgray md:text-sm text-xs hover:text-main hover:translate-x-1 duration-500 my-3 mb-10"><li>Licenses</li></a>
+            </ul>
+        </div>
+        <div class="inline-block w-full lg:w-auto relative">
+            <h6 class="mb-6 text-sm md:text-base">NEWSLETTER  </h6>
+            <div >
+                <div class=" relative inline-block">
+                    <img src="./images/gmail.svg" class="absolute w-6 opacity-30 top-3 left-3 z-40">
+                    <input type="text"  placeholder=" Email Address"
+                    class="inline-block w-full md:w-auto border-[#e8e8e8] outline-none focus:border-main border-[1px] rounded-3xl p-3 pl-9 pr-16 " required>
+                </div>
+                <button type="submit" id="submit" value=" " class="bg-main w-12 h-12 rounded-full -ml-10 absolute z-50 align-middle ">
+            </div>
+            <div class="block mt-6">
+                 <p class="text-myboldgray md:text-xs text-[10px]">We never share your info. View our <span class="text-black hover:text-main"><a href="#">Privacy Policy</a></span></p>    
+            </div>    
+        </div>
+
+    </section>
+    </footer>
+</body>
+</html>
